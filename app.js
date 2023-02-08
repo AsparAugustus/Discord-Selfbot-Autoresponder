@@ -88,7 +88,7 @@ client.on('messageCreate', async msg => {
 
     const devdao_chat_channel = await client.channels.fetch(devdao_chat_id)
 
-
+    //abort if message does not come from devtickets channel
     if (msg.channelId !== dev_tickets_id) return
 
 
